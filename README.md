@@ -13,6 +13,3 @@ The code contains multiple functions used in pLIRm, including the data processin
 
 ## matrix_encode.py
 The code is to encode the LMP(7,7) as a matrix for the score calculation.
-
-## demo.fasta & demo_out.txt
- We povide a demo.fasta and demo_out.txt for testing pLIRm.py. You can also generate your own data for using pLIRm.
