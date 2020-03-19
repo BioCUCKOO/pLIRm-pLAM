@@ -23,4 +23,4 @@ The description of the source code
 pLAM is a data-based algorithm, you can use any part of the total pLAM dataset for reproducing. We also provide a demo.txt for your getting access to pLAM.py.The usage of the code: <br> <br> pLAM.py -i \<imputfile> -o \<outputfile>.
 
 # data.zip
-The data sets includes 105 LICRPs with 127 known LIR motifs and 18,816 human proteins containing at least one LAM for ensuring the reproducibility of the analyses.
+The data sets includes 105 LICRPs with 127 known LIR motifs and 18,816 human proteins containing at least one LAM for ensuring the reproducibility of the analysis.
