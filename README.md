@@ -8,7 +8,7 @@ The description of each source code
 The code is the computational program of pLIRm. The input file of pLIRm should be one or multiple protein sequences in FASTA format. 
 The output file contains the ID of the sequence (s), the LIR motif peptide LMP(7,7), the core LIR motif position, the predicted LIR motif, the score of the LMP(7,7) and the pre-defined cutoff score. The usage of the code is shown as below: 
 
-<br><br>pLIRm.py -i \<imput file> -o \<output file> -t <high(default)/medium/low>.
+<br>pLIRm.py -i \<imput file> -o \<output file> -t <high(default)/medium/low>.
 
 ## utils.py
 The code contains multiple functions used in pLIRm, including the data processing, LMP(7,7) searching, and the calculation the score of the LMP(7,7).
