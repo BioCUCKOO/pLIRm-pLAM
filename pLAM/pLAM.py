@@ -1,7 +1,7 @@
 import os
 import sys
 exe_path = sys.path[0]
-pLIRm_path = os.path.dirname(exe_path)+"\pLIRm"
+pLIRm_path = os.path.dirname(exe_path)+"/pLIRm"
 sys.path.append(pLIRm_path)
 import getopt
 import math
