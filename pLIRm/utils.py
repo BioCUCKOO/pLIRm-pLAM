@@ -4,7 +4,7 @@ import re
 import sys
 import os
 exe_path = sys.path[0]
-now_path = os.path.dirname(exe_path)+"//pLIRm"
+now_path = os.path.dirname(exe_path)+"/pLIRm"
 
 def load_data():
     p_file = open(r'{0}/data_set.txt'.format(now_path), 'r')
