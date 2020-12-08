@@ -2,7 +2,7 @@ import re
 import sys
 import os
 exe_path = sys.path[0]
-now_path = os.path.dirname(exe_path)+"\pLIRm"
+now_path = os.path.dirname(exe_path)+"/pLIRm"
 
 BLOSUM62_file = open(r"{0}/BLOSUM62R.txt".format(now_path),'r')
 BLOSUM62_lines = BLOSUM62_file.readlines()
