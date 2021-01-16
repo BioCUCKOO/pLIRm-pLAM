@@ -28,3 +28,25 @@ pLAM is a model-based algorithm to identify LAMs that significantly change the s
 
 ## data.zip
 The data set includes 105 LICRPs with 127 known LIR motifs (pLIRm_positive.fasta and pLIRm_negative.fasta stand for prepared positive and negative LMP(7,7) peptides), and 18,816 human proteins containing at least one LAM (pLAM_data.txt).
+
+Software Requirements
+===
+OS Requirements
+---
+Above codes have been tested on the following systems:
+Windows: Windows 7, Windos 10
+Linux: CentOS linux 7.8.2003
+GPS-PAIL 2.0 and iGPS 1.0 for windows platform were downloaded and adopted before iFPS
+
+Hardware Requirements
+---
+All codes and softwares could run on a "normal" desktop computer, no non-standard hardware is needed
+
+Additional information
+===
+pLIRm expected run time is depended on the number of phosphosites used for prediction, it will take about 5 minutes for 2,000 sites.
+
+Contact
+===
+Dr. Yu Xue: xueyu@hust.edu.cn
+Weizhi Zhang: zhangweizhi@hust.edu.cn
