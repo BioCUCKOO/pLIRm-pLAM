@@ -44,8 +44,10 @@ All codes and softwares could run on a "normal" desktop computer, no non-standar
 
 Additional information
 ===
+
 pLIRm expected run time is depended on the number of proteins used for prediction, it will take about 20 seconds for 1,000 proteins.
 pLAM expected run time is depended on the number of LAMs used for prediction, it will take about 2 minutes for 1,000 LAMs.
+
 Contact
 ===
 Dr. Yu Xue: xueyu@hust.edu.cn
