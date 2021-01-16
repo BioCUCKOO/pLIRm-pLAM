@@ -60,10 +60,9 @@ for line in lines_parzon:
 def pLAM(imputfile,outputfile):
     file = open(imputfile,'r')
     line = file.readline()
-    lines = file.readlines()
+    line = file.readline()
     split_points = {}
-    progress_count = 0
-    for line in lines:
+    while(line):
         items = line.strip().split()
         uni = items[0]
         mut = items[3]
@@ -83,13 +82,10 @@ def pLAM(imputfile,outputfile):
             mut_p = 0
         if uni not in split_points.keys():
             split_points[uni] = [[mut,ori_motif,ori_s,ori_p,mut_motif,mut_s,mut_p]]
-            progress_count += 1
         else:
             split_points[uni].append([mut,ori_motif,ori_s,ori_p,mut_motif,mut_s,mut_p])
-            progress_count += 1
+        line = file.readline()
     print("Points Done!")
-    progress_bar = [(i+1)/progress_count for i in range(progress_count)]
-    progress_idx = 0
     now_progress = 0
     length = len(split_points.keys())
     key_list = list(split_points.keys())
@@ -99,10 +95,7 @@ def pLAM(imputfile,outputfile):
         else:
             gene_name = "N/A"
         for i in range(len(split_points[key])):
-            now_progress += 1
-            if now_progress >= progress_bar[progress_idx]*progress_count:
-                print('------------{0}%-----------'.format(int(100*progress_bar[progress_idx])))
-                progress_idx += 1
+            
             p_deltas = parzon_dic[get_float(split_points[key][i][3],3)]
             index = int(get_float(split_points[key][i][-1],3)/0.001)
             p_value = p_deltas[index]
